@@ -1,0 +1,21 @@
+{
+	"name": "imdbParquetdataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "imdbparquet",
+				"folderPath": "Output",
+				"fileSystem": "taxidata"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
